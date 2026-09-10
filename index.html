@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem Social</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Bem Social</h2>
+
+  <!-- Banner Ilustrativo -->
+  <div class="banner-container">
+    <img src="https://cdni.iconscout.com/illustration/premium/thumb/charity-and-donation-illustration-download-in-svg-png-gif-file-formats--helping-poor-people-volunteering-food-pack-pack-services-illustrations-4861216.png" alt="Apoio Social">
+  </div>
+
+  <!-- Botão Modo Escuro -->
+  <button id="btnDark" onclick="alternarModoEscuro()">🌙 Alternar Modo Escuro</button>
+
+  <!-- Seletor de Cidades -->
+  <label for="seletorCidade" class="rotulo">Escolha a cidade:</label>
+  <select id="seletorCidade">
+    <option value="belem">Belém do Pará (PA)</option>
+    <option value="rio">Rio de Janeiro (RJ)</option>
+    <option value="sp">São Paulo (SP)</option>
+  </select>
+
+  <!-- Campo de Pesquisa -->
+  <input type="text" id="campoBusca" placeholder="🔍 Digite um nome ou endereço...">
+
+  <!-- Botoes de Categoria -->
+  <div class="grade-botoes">
+    <button onclick="mostrarAlimentacao()">🍲 Alimentação</button>
+    <button onclick="mostrarAbrigo()">🏠 Abrigo e Acolhimento</button>
+    <button onclick="mostrarHigiene()">🧼 Higiene e Centro POP</button>
+    <button onclick="mostrarDocumentos()">💳 Documentos e CRAS</button>
+    <button onclick="mostrarAjuda()">🆘 Ajuda Emergencial</button>
+  </div>
+
+  <!-- Área de Resultados das Clicadas -->
+  <div id="resultado"></div>
+
+  <!-- Card do PIX -->
+  <div id="cardPix">
+    <h3>💚 Apoie este Projeto Social</h3>
+    <p>Sua doação ajuda a manter a plataforma ativa para quem mais precisa.</p>
+    <span id="chavePixTexto">ee5c14b0-f988-470b-a61b-7ef660262183</span>
+    <button id="btnCopiarPix" onclick="copiarPix()">📋 Copiar Chave PIX</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
