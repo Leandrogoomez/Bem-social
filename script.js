@@ -74,8 +74,9 @@ function copiarPix() {
     alert("Erro ao copiar. A chave é: " + chavePix);
   });
 }
-
-// Modo Escuro
 function alternarModoEscuro() {
   document.body.classList.toggle("dark-mode");
-              }
+}
+
+
+  
